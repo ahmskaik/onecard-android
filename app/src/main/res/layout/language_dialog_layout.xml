@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_260sdp"
+        app:cardCornerRadius="@dimen/radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvAppLang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/app_language"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:fontFamily="@font/title_font"
+                android:textSize="@dimen/font_size_xlarge"/>
+
+
+            <RadioGroup
+                android:id="@+id/languages_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAppLang"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large">
+                <RadioButton
+                    android:id="@+id/english_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_medium"
+                    android:tag="en"
+                    android:text="@string/english"/>
+
+                <RadioButton
+                    android:id="@+id/turkish_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:textSize="@dimen/font_size_medium"
+                    android:tag="tr"
+                    android:text="@string/turkish"/>
+
+                <RadioButton
+                    android:id="@+id/arabic_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:textSize="@dimen/font_size_medium"
+                    android:tag="ar"
+                    android:text="@string/arabic"/>
+
+                <RadioButton
+                    android:id="@+id/malaysian_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:textSize="@dimen/font_size_medium"
+                    android:tag="ms"
+                    android:text="@string/malaysian"/>
+
+            </RadioGroup>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/done_button"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/horizontal_gradient">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/done"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_17ssp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

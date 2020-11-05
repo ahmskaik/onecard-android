@@ -1,0 +1,163 @@
+<resources>
+    <string name="facebook_app_id">2736645039945929</string>
+    <string name="fb_login_protocol_scheme">fb2736645039945929</string>
+    <string name="app_name">ONE</string>
+
+    <string name="login">دخول</string>
+
+    <string name="donot_have_account">ليس لديك حساب؟</string>
+
+    <string name="create_account">إنشاء حساب</string>
+
+    <string name="forget_password">هل نسيت كلمة السر؟</string>
+
+    <string name="name">الاسم</string>
+
+    <string name="password">كملة السر</string>
+
+    <string name="have_account">هل لديك حساب؟</string>
+
+    <string name="create">إنشاء</string>
+
+    <string name="mobile">موبايل</string>
+
+    <string name="repassword">إعادة كلمة السر</string>
+
+    <string name="current_location">الموقع الحالي</string>
+
+    <string name="signIn_or_register">الدخول أو التسجيل</string>
+
+    <string name="cards">البطاقات</string>
+
+    <string name="distributors">الموزعون</string>
+
+    <string name="about">من نحن</string>
+
+    <string name="contactUs">اتصل بنا</string>
+
+    <string name="dashbord">لوحة التحكم</string>
+
+    <string name="logout">تسجيل خروج</string>
+
+    <string name="no_internt_connection">لا يوجد اتصال إنترنت</string>
+
+    <string name="email">البريد الالكتروني</string>
+
+    <string name="fill_all_fields">ملء جميع الحقول</string>
+
+    <string name="password_doesnot_match">كلمة المرور غير متطابقة</string>
+
+    <string name="successfully_registered">تم التسجيل بنجاح</string>
+
+    <string name="featured_offers">عروض مميزة</string>
+
+    <string name="discount">خصم</string>
+
+    <string name="featured_sellers">مقدمو خدمة مميزين</string>
+
+    <string name="companies">الشركات</string>
+
+    <string name="exit_app_message">اضغط خروج مرة أخرى للخروج</string>
+
+    <string name="must_login_message">يجب عليك تسجيل الدخول أولاً</string>
+
+    <string name="reset_password">إعادة تعيين كلمة السر</string>
+
+    <string name="new_password">كلمة السر الجديدة</string>
+
+    <string name="old_password">كلمة السر القديمة</string>
+
+    <string name="password_changed">تم تغيير كلمة السر !!</string>
+
+    <string name="forget_password2">كلمة السر مزورة</string>
+
+    <string name="send">إرسال</string>
+
+    <string name="discount_amount">مقدار الخصم</string>
+
+    <string name="discount_percentage">نسبة الخصم</string>
+
+    <string name="date">التاريخ</string>
+
+    <string name="total">الإجمالي</string>
+
+    <string name="confirm_password">تأكيد كلمة السر</string>
+
+    <string name="no_match">كلمة المرور غير متطابقة</string>
+
+    <string name="last_name">اللقب</string>
+
+    <string name="gender">الجنس</string>
+
+    <string name="birthday">تاريخ الميلاد</string>
+
+    <string name="male">ذكر</string>
+
+    <string name="female">أنثى</string>
+
+    <string name="address">العنوان</string>
+
+    <string name="edit">تعديل</string>
+
+    <string name="country">البلد</string>
+
+    <string name="forget_password_message">لقد أرسلنا لك بريد إلكتروني ، تحقق من ذلك</string>
+
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+
+    <string name="profile_updated">تم تحديث الملف الشخصي بنجاح</string>
+
+    <string name="Orders">الطلبات</string>
+
+    <string name="my_cards">بطاقاتي</string>
+
+    <string name="done">تم</string>
+
+    <string name="none">لايوجد</string>
+
+    <string name="please_wait">من فضلك انتظر</string>
+
+    <string name="select_city">اختر المدينة</string>
+
+    <string name="select_country">اختر البلد</string>
+
+    <string name="app_language">اللغة</string>
+
+    <string name="english">انكليزي</string>
+
+    <string name="turkish">تركي</string>
+
+    <string name="arabic">عربي</string>
+
+    <string name="malaysian">ماليزي</string>
+
+
+    <string name="report_page">صفحة التقرير</string>
+    <string name="wrong_barcode">الباركود الخطأ</string>
+    <string name="member_name">اسم العضوية</string>
+    <string name="bill_value">قيمة الفاتورة</string>
+    <string name="sale_value">قيمة العرض</string>
+    <string name="currency">نوع العملة</string>
+    <string name="choose_offer">اختر عرض</string>
+    <string name="add">إضافة</string>
+    <string name="add_bill">إضافة فاتورة</string>
+    <string name="bill_added_successfully">تمت إضافة فاتورة بنجاح</string>
+    <string name="something_went_wrong">حدث خطأ</string>
+    <string name="bill_value_message">يجب أن تكون قيمة البيع أقل من قيمة الفاتورة</string>
+    <string name="active_cards">البطاقة مفعلة</string>
+    <string name="serial_number">الرقم السري</string>
+    <string name="active">مفعل</string>
+    <string name="card_activated">تم تفعيل البطاقة بنجاح</string>
+    <string name="offer_details">تفاصيل العرض</string>
+
+    <string name="review_submitted">تم إرسال تعليقك بنجاح</string>
+    <string name="submit_review">إرسال التعليق</string>
+    <string name="your_review">تعليقاتك</string>
+    <string name="rate_dialog_title">تقييمك لهذا العرض</string>
+    <string name="already_rated">تم تقييم هذا الطلب بالفعل</string>
+    <string name="agree_to_one">أوافق على One</string>
+    <string name="privacy_policy">سياسة خاصة</string>
+    <string name="share_offer">شارك العرض</string>
+    <string name="language">اللغة</string>
+    <string name="branches">الأفرع</string>
+</resources>

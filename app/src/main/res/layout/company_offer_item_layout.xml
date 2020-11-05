@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/offer_outer_card"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_100sdp"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginBottom="@dimen/margin_medium"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/radius"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:id="@+id/offer_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/offer_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_company"
+            android:layout_margin="@dimen/margin_medium"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,167 @@
+<resources>
+    <string name="facebook_app_id">2736645039945929</string>
+    <string name="fb_login_protocol_scheme">fb2736645039945929</string>
+    <string name="app_name">ONE</string>
+
+    <string name="login">log masuk</string>
+
+    <string name="donot_have_account">Tidak mempunyai akaun</string>
+
+    <string name="create_account">Buat akaun</string>
+
+    <string name="forget_password">Lupa kata laluan?</string>
+
+    <string name="name">Name</string>
+
+    <string name="password">kata laluan</string>
+
+    <string name="have_account">mempunyai akaun</string>
+
+    <string name="create">Buat</string>
+
+    <string name="mobile">Mobile</string>
+
+    <string name="repassword">kata laluan semula</string>
+
+    <string name="current_location">lokasi sekarang</string>
+
+    <string name="signIn_or_register">daftar </string>
+
+    <string name="cards">kad</string>
+
+    <string name="distributors">pengedar</string>
+
+    <string name="about">kira</string>
+
+    <string name="contactUs">hubungi kami </string>
+
+    <string name="dashbord">Papan Pemuka</string>
+
+    <string name="logout">log keluar</string>
+
+    <string name="no_internt_connection">Tiada sambungan internet</string>
+
+    <string name="email">e-mel</string>
+
+    <string name="fill_all_fields">Isi semua bidang</string>
+
+    <string name="password_doesnot_match">kata laluan tidak sepadan</string>
+
+    <string name="successfully_registered">berjaya didaftarkan</string>
+
+    <string name="featured_offers">tawaran yang diketengahkan</string>
+
+    <string name="discount">diskaun</string>
+
+    <string name="featured_sellers">penjual yang ditampilkan</string>
+
+    <string name="companies">Syarikat</string>
+
+    <string name="exit_app_message">belakang</string>
+
+    <string name="must_login_message">Anda mesti log masuk terlebih dahulu</string>
+
+    <string name="reset_password">menetapkan semula kata laluan</string>
+
+    <string name="new_password">kata laluan baharu </string>
+
+    <string name="old_password">kata laluan lama</string>
+
+    <string name="password_changed">kata laluan diubah !!</string>
+
+    <string name="forget_password2">Lupa kata laluan</string>
+
+    <string name="send">Hantar</string>
+
+    <string name="discount_amount">Jumlah diskaun</string>
+
+    <string name="discount_percentage">peratusan diskaun</string>
+
+    <string name="date">tarikh</string>
+
+    <string name="total">jumlahnya</string>
+
+    <string name="confirm_password">sahkan kata laluan</string>
+
+    <string name="no_match">kata laluan tidak sepadan</string>
+
+    <string name="last_name">Nama terakhir</string>
+
+    <string name="gender">jantina</string>
+
+    <string name="birthday">hari lahir</string>
+
+    <string name="male">lelaki</string>
+
+    <string name="female">perempuan</string>
+
+    <string name="address">alamat</string>
+
+    <string name="edit">Edit</string>
+
+    <string name="country">negare</string>
+
+    <string name="forget_password_message">Kami menghantar e-mel kepada anda</string>
+
+    <string name="edit_profile">Sunting profile</string>
+
+    <string name="profile_updated">Profil dikemaskini</string>
+
+    <string name="Orders">Pesanan</string>
+
+    <string name="my_cards">Kad saya</string>
+
+    <string name="done">dilakukan</string>
+
+    <string name="none">tiada</string>
+
+    <string name="please_wait">sila tunggu</string>
+
+    <string name="select_city">pilih bandar</string>
+
+    <string name="select_country">pilih negara</string>
+
+    <string name="app_language">pilih bahasa</string>
+
+    <string name="english">inggeris</string>
+
+    <string name="turkish">Turki</string>
+
+    <string name="arabic">arab</string>
+
+    <string name="malaysian">malay</string>
+
+
+
+
+    <string name="report_page">Laporkan halaman</string>
+    <string name="wrong_barcode">Barcode Salah</string>
+    <string name="member_name">Nama ahli</string>
+    <string name="bill_value">Nilai Bil</string>
+    <string name="sale_value">Nilai Jualan</string>
+    <string name="currency">Mata wang</string>
+    <string name="choose_offer">Pilih Tawaran</string>
+    <string name="add">Tambah</string>
+    <string name="add_bill">Tambah Bill</string>
+    <string name="bill_added_successfully">Bill Added Successfully</string>
+    <string name="something_went_wrong">Ada sesuatu yang salah</string>
+    <string name="bill_value_message">Nilai jualan mestilah kurang daripada nilai bil</string>
+    <string name="active_cards">Kad Aktif</string>
+    <string name="serial_number">Nombor siri</string>
+    <string name="active">Aktif</string>
+    <string name="card_activated">Kad Diaktifkan Berjaya</string>
+    <string name="offer_details">Butiran Tawaran</string>
+
+
+
+    <string name="review_submitted">Semakan anda diserahkan dengan jayanya</string>
+    <string name="submit_review">Hantar Semakan</string>
+    <string name="your_review">Tinjauan Anda</string>
+    <string name="rate_dialog_title">Penarafan anda untuk tawaran ini</string>
+    <string name="already_rated">Pesanan ini telah dinilai</string>
+    <string name="agree_to_one">saya setuju dengan ONE</string>
+    <string name="privacy_policy">Dasar Privasi</string>
+    <string name="share_offer">Tawaran Kongsi</string>
+    <string name="language">Bahasa</string>
+    <string name="branches">Cawangan</string>
+</resources>

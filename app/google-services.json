@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "269794218815",
+    "firebase_url": "https://solid-shelter-257519.firebaseio.com",
+    "project_id": "solid-shelter-257519",
+    "storage_bucket": "solid-shelter-257519.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269794218815:android:2652f06b90889b8c06798a",
+        "android_client_info": {
+          "package_name": "com.nawasoft.oneapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269794218815-8trh84cav274oic439umpt7vbs51g6j8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nawasoft.oneapp",
+            "certificate_hash": "94d86277c0de91285bcff4e6adfcf70ee54eda0f"
+          }
+        },
+        {
+          "client_id": "269794218815-33lv6fap344anjjuspsobsrso4a4ik9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC39VKiNJN8bhLlx_Zf9vrqXumxWflOZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269794218815-33lv6fap344anjjuspsobsrso4a4ik9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

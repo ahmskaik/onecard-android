@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_medium"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:outlineSpotShadowColor="@color/gradient1"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:padding="@dimen/margin_medium">
+
+        <TextView
+            android:id="@+id/branch_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch Name"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_size_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/branch_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_vsmall"
+            android:text="Branch Address"
+            android:textColor="@color/secondFontColor"
+            android:textSize="@dimen/font_size_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/branch_title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/branch_location_button"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_location" />
+
+            <ImageView
+                android:id="@+id/branch_mobile_button"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/margin_small"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_mobile" />
+
+            <ImageView
+                android:id="@+id/branch_phone_button"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/margin_small"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_call" />
+
+            <ImageView
+                android:id="@+id/branch_message_button"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/margin_small"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_message" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

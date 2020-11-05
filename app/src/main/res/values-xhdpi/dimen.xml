@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="neg_offer_margin_right">-90dp</dimen>
+</resources>

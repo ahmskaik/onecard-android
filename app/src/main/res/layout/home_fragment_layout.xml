@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <include
+        android:id="@+id/home_toolbar"
+        layout="@layout/home_toolbar" android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/home_swipe_to_refresh"
+        android:layout_below="@id/home_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:id="@+id/home_layout"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/home_progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:elevation="25dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/featured_sellers_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/featured_offers_list"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/horizontal_gradient"
+                    android:padding="@dimen/margin_small"
+                    android:text="@string/featured_sellers"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/featured_offers_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categories_list"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:background="@drawable/horizontal_gradient"
+                    android:padding="@dimen/margin_small"
+                    android:text="@string/featured_offers"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_size_small"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/featured_offers_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/featured_offers_text"
+                    android:layout_marginTop="@dimen/margin_small" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/featured_companies_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/featured_sellers_text"
+                    android:layout_marginTop="@dimen/margin_small" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categories_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ads_viewPager"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:scrollbars="none" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/ads_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_slider_height"
+                    android:layout_marginTop="@dimen/margin_medium" />
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

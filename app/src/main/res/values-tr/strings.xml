@@ -1,0 +1,162 @@
+<resources>
+    <string name="facebook_app_id">2736645039945929</string>
+    <string name="fb_login_protocol_scheme">fb2736645039945929</string>
+    <string name="app_name">OneApp</string>
+    <string name="login">Giriş yap</string>
+
+    <string name="donot_have_account">Hesabım yok</string>
+
+    <string name="create_account">Hesap oluştur</string>
+
+    <string name="forget_password">Şifremi unuttum</string>
+
+    <string name="name">İsim</string>
+
+    <string name="password">Şifre</string>
+
+    <string name="have_account">Hesabım bulunur</string>
+
+    <string name="create">Oluşturmak</string>
+
+    <string name="mobile">Cep telefonu</string>
+
+    <string name="repassword">Şifreyi tekrar gir</string>
+
+    <string name="current_location">Konum</string>
+
+    <string name="signIn_or_register">Giriş yap yada hesap oluştur</string>
+
+    <string name="cards">Kart</string>
+
+    <string name="distributors">Bayi</string>
+
+    <string name="about">Hakkında</string>
+
+    <string name="contactUs">Bize ulaşın</string>
+
+    <string name="dashbord">Gösterge Paneli</string>
+
+    <string name="logout">Çıkış Yap</string>
+
+    <string name="no_internt_connection">İnternet bağlantısı yok</string>
+
+    <string name="email">E-posta</string>
+
+    <string name="fill_all_fields">Tüm alanları doldurun</string>
+
+    <string name="password_doesnot_match">Şifre eşleşmiyor</string>
+
+    <string name="successfully_registered">Başarıyla Kayıt Edildi</string>
+
+    <string name="featured_offers">Özel kampanya</string>
+
+    <string name="discount">İndirim</string>
+
+    <string name="featured_sellers">Özel satıcılar</string>
+
+    <string name="companies">Şirketler</string>
+
+    <string name="exit_app_message">Tekrar tıklayın</string>
+
+    <string name="must_login_message">Öncelikle giriş yapmalısınız</string>
+
+    <string name="reset_password">Şifre yenile</string>
+
+    <string name="new_password">Yeni şifre</string>
+
+    <string name="old_password">Eski şifre</string>
+
+    <string name="password_changed">Şifre değiştirildi !!</string>
+
+    <string name="forget_password2">Şifremi unuttum</string>
+
+    <string name="send">Gönder</string>
+
+    <string name="discount_amount">İndirim miktarı</string>
+
+    <string name="discount_percentage">İndirim oranı</string>
+
+    <string name="date">Tarih</string>
+
+    <string name="total">Toplam</string>
+
+    <string name="confirm_password">Şifre doğrula</string>
+
+    <string name="no_match">Şifre  erişmiyor</string>
+
+    <string name="last_name">Soyadı</string>
+
+    <string name="gender">Cinsiyet</string>
+
+    <string name="birthday">Doğum</string>
+
+    <string name="male">Erkek</string>
+
+    <string name="female">Kadın</string>
+
+    <string name="address">Adres</string>
+
+    <string name="edit">Düzenle</string>
+
+    <string name="country">Ülke</string>
+
+    <string name="forget_password_message">Email gönderildi</string>
+
+    <string name="edit_profile">Profili güncelle</string>
+
+    <string name="profile_updated">Profil güncellendi</string>
+
+    <string name="Orders">Siparişler</string>
+
+    <string name="my_cards">kartlar</string>
+
+    <string name="done">Bitti</string>
+
+    <string name="none">Yok</string>
+
+    <string name="please_wait">Lütfen bekleyin</string>
+
+    <string name="select_city">Şehir seç</string>
+
+    <string name="select_country">Ülke seç</string>
+
+    <string name="app_language">Uygulama dili</string>
+
+    <string name="english">İngilizce</string>
+
+    <string name="turkish">Türkçe</string>
+
+    <string name="arabic">Arapça</string>
+
+    <string name="malaysian">Malezyalı</string>
+
+    <string name="report_page">Rapor sayfası</string>
+    <string name="wrong_barcode">Yanlış Barkod</string>
+    <string name="member_name">Üye adı</string>
+    <string name="bill_value">Fatura Değeri</string>
+    <string name="sale_value">Satış değeri</string>
+    <string name="currency">Para birimi</string>
+    <string name="choose_offer">Teklif Seçin</string>
+    <string name="add">Ekle</string>
+    <string name="add_bill">Fatura Ekle</string>
+    <string name="bill_added_successfully">Bill Başarıyla Eklendi</string>
+    <string name="something_went_wrong">Bir şeyler yanlış gitti</string>
+    <string name="bill_value_message">Satış değeri fatura değerinden küçük olmalıdır</string>
+    <string name="active_cards">Aktif Kartlar</string>
+    <string name="serial_number">Seri numarası</string>
+    <string name="active">Active</string>
+    <string name="card_activated">Kart Başarıyla Etkinleştirildi</string>
+    <string name="offer_details">Teklif Ayrıntıları</string>
+
+
+    <string name="review_submitted">Yorumunuz başarıyla gönderildi</string>
+    <string name="submit_review">İnceleme Gönder</string>
+    <string name="your_review">Yorumun</string>
+    <string name="rate_dialog_title">Bu teklif için puanınız</string>
+    <string name="already_rated">Bu sipariş zaten derecelendirildi</string>
+    <string name="agree_to_one">ONE \'a katılıyorum</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="share_offer">Teklifi Paylaş</string>
+    <string name="language">Dil</string>
+    <string name="branches">Dallar</string>
+</resources>

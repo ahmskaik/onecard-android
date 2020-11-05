@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ProgressBar
+        android:id="@+id/offers_progressBar"
+        android:visibility="gone"
+        android:elevation="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/offers_swipe_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/offers_toolbar">
+
+        <com.nawasoft.oneapp.LockableScrollView
+            android:id="@+id/offer_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/offers_categories_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/offers_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/offers_categories_list"/>
+
+                <FrameLayout
+                    android:id="@+id/map_container"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/offers_categories_list"/>
+
+            </RelativeLayout>
+
+        </com.nawasoft.oneapp.LockableScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/offers_toolbar"
+        layout="@layout/offers_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

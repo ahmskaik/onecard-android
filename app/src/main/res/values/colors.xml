@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C33484</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#E3857D</color>
+
+    <color name="gradient1">#C33484</color>
+    <color name="gradient2">#E3857D</color>
+
+    <color name="grayColor">#EAEBEF</color>
+
+    <color name="secondFontColor">#62657A</color>
+    <color name="yellow">#B2FDD835</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_small">@dimen/_10ssp</dimen>
+    <dimen name="font_size_medium">@dimen/_13ssp</dimen>
+    <dimen name="font_size_large">@dimen/_15ssp</dimen>
+    <dimen name="font_size_xlarge">@dimen/_20ssp</dimen>
+    <dimen name="font_size_xxlarge">@dimen/_26ssp</dimen>
+
+    <dimen name="radius">@dimen/_16sdp</dimen>
+    <dimen name="margin_vsmall">@dimen/_3sdp</dimen>
+    <dimen name="margin_small">@dimen/_7sdp</dimen>
+    <dimen name="margin_medium">@dimen/_12sdp</dimen>
+    <dimen name="margin_large">@dimen/_27sdp</dimen>
+
+    <dimen name="margin_vlarge">@dimen/_42sdp</dimen>
+    <dimen name="home_slider_height">@dimen/_167sdp</dimen>
+    <dimen name="neg_offer_margin_right">-100dp</dimen>
+    <dimen name="neg_offer_margin_top">@dimen/_minus4sdp</dimen>
+    <dimen name="neg_offer_margin_bottom">@dimen/_minus25sdp</dimen>
+    <dimen name="offer_margin_right">@dimen/_75sdp</dimen>
+    <dimen name="offer_margin_top">@dimen/_4sdp</dimen>
+    <dimen name="offer_margin_bottom">@dimen/_25sdp</dimen>
+    <dimen name="category_item_reso">@dimen/_50sdp</dimen>
+    <dimen name="category_item_radius">@dimen/_25sdp</dimen>
+    <dimen name="category_item_reso_small">@dimen/_41sdp</dimen>
+    <dimen name="category_item_radius_small">@dimen/_20sdp</dimen>
+
+</resources>

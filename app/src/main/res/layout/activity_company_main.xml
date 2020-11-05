@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nawasoft.companyapp.main.CompanyMainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/company_app_main_toolbar"/>
+
+    <ProgressBar
+        android:id="@+id/company_main_progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_below="@id/toolbar"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/qr_code_button"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:background="?attr/selectableItemBackground"
+            android:outlineSpotShadowColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/radius"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_medium"
+                android:src="@drawable/ic_qr_code" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/reports_button"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_marginTop="@dimen/margin_large"
+            android:background="?attr/selectableItemBackground"
+            android:outlineSpotShadowColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/radius"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:src="@drawable/ic_report" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="@string/report_page"
+                    android:textSize="@dimen/font_size_medium"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/logout_button"
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:outlineSpotShadowColor="@color/gradient2"
+        app:cardCornerRadius="@dimen/radius"
+        app:cardElevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/horizontal_gradient"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/font_size_xlarge"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:visibility="gone"
+        android:elevation="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
