@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 
-import com.google.android.material.card.MaterialCardView;
 import com.nawasoft.base.BaseFragment;
 import com.nawasoft.datalayer.model.Country;
 import com.nawasoft.oneapp.R;
@@ -55,9 +55,9 @@ public class EditProfileFragment extends BaseFragment implements CalendarUtil.On
     @BindView(R.id.countries_spinner)
     Spinner spinner;
     @BindView(R.id.back_button)
-    MaterialCardView backButton;
+    CardView backButton;
     @BindView(R.id.edit_button)
-    MaterialCardView editButton;
+    CardView editButton;
 
     private CalendarUtil calendarUtil;
 

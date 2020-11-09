@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.nawasoft.base.BaseActivity;
 import com.nawasoft.companyapp.main.CompanyMainActivity;
 import com.nawasoft.oneapp.R;
@@ -14,6 +16,7 @@ import com.nawasoft.oneapp.login.forgetpassword.ForgetPasswordActivity;
 import com.nawasoft.oneapp.login.mvp.LoginMVP;
 import com.nawasoft.oneapp.signup.SignUpActivity;
 import com.nawasoft.oneapp.util.Util;
+import com.nawasoft.utils.GoogleSignInHelper;
 
 import javax.inject.Inject;
 
@@ -22,7 +25,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import dagger.android.AndroidInjection;
 
-public class LoginActivity extends BaseActivity implements LoginMVP.View {
+public class LoginActivity extends BaseActivity implements LoginMVP.View, GoogleSignInHelper.OnGoogleSignInListener {
 
     @Inject
     LoginMVP.Presenter presenter;
@@ -31,9 +34,12 @@ public class LoginActivity extends BaseActivity implements LoginMVP.View {
     EditText emailAddress;
     @BindView(R.id.login_password_input)
     EditText password;
+    @BindView(R.id.llGoogle)
+    LinearLayout llGoogle;
 
     public static int LOGGED_IN_CODE = 772;
     public static int SIGN_UP_CODE = 991;
+    private GoogleSignInHelper googleSignInHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +49,16 @@ public class LoginActivity extends BaseActivity implements LoginMVP.View {
         setProgressBar(R.id.login_progressBar);
         ButterKnife.bind(this);
         presenter.setView(this);
+
+        /**Google*/
+
+        googleSignInHelper = new GoogleSignInHelper(this, this);
+        googleSignInHelper.signOut();
+        googleSignInHelper.connect();
+        llGoogle.setOnClickListener(v -> googleSignInHelper.signIn());
+
+        /**Google*/
+
     }
 
     @Override
@@ -105,4 +121,13 @@ public class LoginActivity extends BaseActivity implements LoginMVP.View {
         return password.getText().toString();
     }
 
+    @Override
+    public void OnGSignInSuccess(GoogleSignInAccount googleSignInAccount) {
+
+    }
+
+    @Override
+    public void OnGSignInError(String error) {
+
+    }
 }

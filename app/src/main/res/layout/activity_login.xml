@@ -13,9 +13,9 @@
         android:layout_height="0dp"
         android:layout_margin="@dimen/margin_medium"
         android:src="@drawable/logo_one"
+        app:layout_constraintBottom_toTopOf="@id/guide_line"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/guide_line"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -23,15 +23,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.3"/>
+        app:layout_constraintGuide_percent="0.3" />
 
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_medium"
-        android:orientation="horizontal"
         android:layoutDirection="locale"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
@@ -61,26 +61,25 @@
         app:layout_constraintLeft_toLeftOf="@id/linear_layout"
         app:layout_constraintRight_toRightOf="@id/linear_layout" />
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
         android:fontFamily="@font/title_font"
-        android:textSize="@dimen/font_size_xlarge"
+        android:text="@string/login"
         android:textColor="@color/secondFontColor"
+        android:textSize="@dimen/font_size_xlarge"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/login_logo" />
 
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_large"
         android:layout_marginEnd="@dimen/margin_large"
-        app:cardCornerRadius="@dimen/radius"
+        app:cardCornerRadius="@dimen/_30sdp"
         app:cardElevation="7dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -91,6 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:padding="@dimen/_2sdp"
             android:weightSum="1">
 
 
@@ -102,7 +102,7 @@
                 android:gravity="center"
                 android:text="@string/email"
                 android:textColor="@color/gradient2"
-                android:textSize="@dimen/font_size_large" />
+                android:textSize="@dimen/_13ssp" />
 
             <View
                 android:layout_width="1dp"
@@ -115,18 +115,19 @@
                 android:id="@+id/login_name_input"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="0.65"
-                android:textSize="@dimen/font_size_medium"
-                android:hint="company@example.com"
+                android:gravity="center_vertical"
                 android:backgroundTint="@android:color/transparent"
-                android:inputType="textEmailAddress" />
+                android:hint="company@example.com"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/_10ssp" />
 
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
 
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -134,7 +135,7 @@
         android:layout_marginStart="@dimen/margin_large"
         android:layout_marginTop="@dimen/margin_medium"
         android:layout_marginEnd="@dimen/margin_large"
-        app:cardCornerRadius="@dimen/radius"
+        app:cardCornerRadius="@dimen/_30sdp"
         app:cardElevation="7dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -144,6 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:padding="@dimen/_2sdp"
             android:weightSum="1">
 
             <TextView
@@ -154,7 +156,7 @@
                 android:gravity="center"
                 android:text="@string/password"
                 android:textColor="@color/gradient2"
-                android:textSize="@dimen/font_size_large" />
+                android:textSize="@dimen/_13ssp" />
 
             <View
                 android:layout_width="1dp"
@@ -167,18 +169,56 @@
                 android:id="@+id/login_password_input"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginStart="@dimen/_5sdp"
                 android:layout_weight="0.65"
-                android:textSize="@dimen/font_size_medium"
                 android:backgroundTint="@android:color/transparent"
-                android:hint="********"
-                android:inputType="textPassword" />
+                android:hint="XXXXXXX"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:textSize="@dimen/_10ssp" />
 
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:background="@drawable/border_google"
+        android:elevation="@dimen/_2sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_2sdp"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            app:srcCompat="@drawable/ic_google_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/main_font"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/connect_with_google"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+    </LinearLayout>
 
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/materialCardView"
         android:layout_width="@dimen/_140sdp"
         android:layout_height="@dimen/_35sdp"
         android:layout_marginBottom="@dimen/margin_medium"
@@ -205,7 +245,7 @@
                 android:textSize="@dimen/font_size_xlarge"
                 android:textStyle="bold" />
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
 
     <ProgressBar
         android:id="@+id/login_progressBar"
@@ -213,9 +253,9 @@
         android:layout_height="wrap_content"
         android:elevation="8dp"
         android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -160,4 +160,6 @@
     <string name="share_offer">شارك العرض</string>
     <string name="language">اللغة</string>
     <string name="branches">الأفرع</string>
+    <string name="connect_with_google">Connect With Google</string>
+
 </resources>

@@ -2,6 +2,7 @@ package com.nawasoft.service;
 
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.core.app.TaskStackBuilder;
@@ -15,6 +16,8 @@ import com.nawasoft.datalayer.model.AccountType;
 import com.nawasoft.datalayer.model.OfferNotification;
 import com.nawasoft.datalayer.sharedpref.ISharedPref;
 import com.nawasoft.oneapp.main.MainActivity;
+import com.nawasoft.service.notification.BaseNotifications;
+import com.nawasoft.service.notification.NotificationHelperUtils;
 import com.nawasoft.service.notification.ServerNotifications;
 
 import java.util.Map;
@@ -31,6 +34,7 @@ public class FirebaseCloudMessagingService extends FirebaseMessagingService {
     IApiService service;
     @Inject
     ServerNotifications serverNotifications;
+    NotificationHelperUtils notificationHelperUtils ;
 
     @Override
     public void onCreate() {
@@ -40,13 +44,23 @@ public class FirebaseCloudMessagingService extends FirebaseMessagingService {
 
     @Override
     public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
+        notificationHelperUtils = new NotificationHelperUtils(this);
+
         if (AccountType.getTypeByValue(sharedPref.getAccountType()) == AccountType.COMPANY)
             return;
-        Map<String, String> dataMap = remoteMessage.getData();
-        OfferNotification offerNotification = new OfferNotification(dataMap);
-        serverNotifications.makeNotification(offerNotification.getNotificationTitle(), offerNotification.getNotificationBody(),
-                getPendingIntent(getOpenOfferIntent(offerNotification.getOfferId())));
 
+        if(remoteMessage.getData().isEmpty()){
+            notificationHelperUtils.buildNotificationWithIntent(
+                    remoteMessage.getNotification().getTitle(),
+                    remoteMessage.getNotification().getBody(),
+                    new Intent(getApplicationContext(), MainActivity.class));
+         }else{
+
+            Map<String, String> dataMap = remoteMessage.getData();
+            OfferNotification offerNotification = new OfferNotification(dataMap);
+            serverNotifications.makeNotification(offerNotification.getNotificationTitle(), offerNotification.getNotificationBody(),
+                    getPendingIntent(getOpenOfferIntent(offerNotification.getOfferId())));
+        }
     }
 
 

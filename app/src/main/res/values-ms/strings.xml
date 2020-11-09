@@ -164,4 +164,7 @@
     <string name="share_offer">Tawaran Kongsi</string>
     <string name="language">Bahasa</string>
     <string name="branches">Cawangan</string>
+
+    <string name="connect_with_google">Connect With Google</string>
+
 </resources>

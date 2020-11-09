@@ -1,7 +1,9 @@
 package com.nawasoft.oneapp.homefragment;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -36,11 +38,16 @@ import com.nawasoft.oneapp.homefragment.adapter.adsadapter.AdsViewPagerAdapter;
 import com.nawasoft.oneapp.homefragment.adapter.categoriesadapter.CategoriesListAdapter;
 import com.nawasoft.oneapp.homefragment.adapter.companyadapter.FeaturedCompanyListAdapter;
 import com.nawasoft.oneapp.homefragment.adapter.offersadapter.FeaturedOfferListAdapter;
+import com.nawasoft.oneapp.homefragment.adapter.slideradpter.SliderAdapterExample;
 import com.nawasoft.oneapp.homefragment.mvp.HomeMVP;
+import com.nawasoft.oneapp.homefragment.mvp.SliderItem;
 import com.nawasoft.oneapp.offerfragmnet.OfferFragment;
 import com.nawasoft.oneapp.offers.OffersFragment;
 import com.nawasoft.oneapp.offers.filter.FilterDialog;
 import com.nawasoft.oneapp.util.Util;
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +59,7 @@ import butterknife.ButterKnife;
 
 
 public class HomeFragment extends BaseFragment implements HomeMVP.View, SwipeRefreshLayout.OnRefreshListener,
-        OnFilterCallback {
+        OnFilterCallback{
 
     private static final String OFFER_ID = "offer_id";
 
@@ -61,6 +68,8 @@ public class HomeFragment extends BaseFragment implements HomeMVP.View, SwipeRef
 
     @BindView(R.id.ads_viewPager)
     ViewPager adsViewPager;
+    @BindView(R.id.imageSlider)
+    SliderView sliderView;
     @BindView(R.id.categories_list)
     RecyclerView categoriesRecyclerView;
     @BindView(R.id.featured_offers_list)
@@ -75,6 +84,8 @@ public class HomeFragment extends BaseFragment implements HomeMVP.View, SwipeRef
     View filterButton;
     @BindView(R.id.search_input)
     EditText searchInput;
+
+    private SliderAdapterExample adapter;
 
     private AdsViewPagerAdapter adsViewPagerAdapter;
     private CategoriesListAdapter categoriesAdapter;
@@ -179,6 +190,18 @@ public class HomeFragment extends BaseFragment implements HomeMVP.View, SwipeRef
                 swipeRefreshLayout.setEnabled(true);
             return false;
         });
+
+        adapter = new SliderAdapterExample(getContext());
+        sliderView.setSliderAdapter(adapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM); //set indicator animation by using SliderLayout.IndicatorAnimations. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
+        sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
+        sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
+        sliderView.setScrollTimeInSec(5);
+        sliderView.setAutoCycle(true);
+        sliderView.startAutoCycle();
+
+
+        sliderView.setOnIndicatorClickListener(position -> Log.i("GGG", "onIndicatorClicked: " + sliderView.getCurrentPagePosition()));
     }
 
     private void initializeCategoriesList() {
@@ -218,7 +241,6 @@ public class HomeFragment extends BaseFragment implements HomeMVP.View, SwipeRef
         Util.addFragmentToBackStack(getFragmentManager(), R.id.fragment_container, fragment, "company_fragment");
     };
 
-
     private void openOffer(String offerId) {
         Fragment fragment = OfferFragment.getInstance(onBackPressedCallback, offerId);
         Util.addFragmentToBackStack(getFragmentManager(), R.id.fragment_container, fragment, "offer_fragment");
@@ -241,6 +263,7 @@ public class HomeFragment extends BaseFragment implements HomeMVP.View, SwipeRef
         this.sliderList.clear();
         this.sliderList.addAll(sliderList);
         adsViewPagerAdapter.notifyDataSetChanged();
+        renewItems();
     }
 
     @Override
@@ -269,4 +292,16 @@ public class HomeFragment extends BaseFragment implements HomeMVP.View, SwipeRef
         super.setLoaded();
         swipeRefreshLayout.setRefreshing(false);
     }
+
+    public void renewItems() {
+        Log.d("renewItems", "renewItems: " + sliderList.size());
+        List<SliderItem> sliderItemList = new ArrayList<>();
+        for (int i = 0; i < sliderList.size(); i++) {
+            SliderItem sliderItem = new SliderItem();
+            sliderItem.setImageUrl(sliderList.get(i).getPhotoLink());
+            sliderItemList.add(sliderItem);
+        }
+        adapter.renewItems(sliderItemList);
+    }
+
 }

@@ -159,4 +159,6 @@
     <string name="share_offer">Teklifi Paylaş</string>
     <string name="language">Dil</string>
     <string name="branches">Dallar</string>
+
+    <string name="connect_with_google">Connect With Google</string>
 </resources>
